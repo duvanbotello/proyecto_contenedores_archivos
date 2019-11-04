@@ -1,0 +1,18 @@
+1	Quijote de la mancha	1	Cervantes	8
+2	Romeo y Julieta	1	Shakespeare	4
+3	La Guerra y la Paz, León Tostoi	1	PERUANA	3
+4	La moda 3	2	moditas	3
+5	los vaqueros	2	española	2
+6	Informatica	3	unipamplona	0
+7	programacion	3	8	5
+8	Indorio	1	555	2
+9	mosa	1	lapara	4
+10	fuema	3	duvan	6
+11	los pablos	1	dd	5
+12	cartilla nacho	2	cucuteña	3
+13	sin tetas no hay paraiso	1	venezolana	3
+14	las nenas sexys	2	qk	5
+15	los suicidas 4	2	colombiana	45
+16	lospanes	3	qk	5
+17	555	2	dd	55
+18	carlos tarro	1	posible	67

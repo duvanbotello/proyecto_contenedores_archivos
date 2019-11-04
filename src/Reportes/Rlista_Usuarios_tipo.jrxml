@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report1" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="4339f102-fa08-40c8-bfff-f4c46e0796ab">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="logo" class="java.io.InputStream"/>
+	<parameter name="tipo" class="java.lang.String"/>
+	<field name="id_usuario" class="java.lang.Long"/>
+	<field name="nombre" class="java.lang.String"/>
+	<field name="rol" class="java.lang.Integer"/>
+	<field name="telefono" class="java.lang.Integer"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="555" height="79" backcolor="#333333" uuid="8f1ba13b-0f12-4b7b-814f-3c02a0154938"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="110" y="15" width="169" height="35" forecolor="#FFFFFF" uuid="af9f8d6c-4ec2-4262-87e7-fa4f613da866"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial Black" size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Reporte de]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="263" y="50" width="191" height="20" forecolor="#0099FF" uuid="52235499-aa0b-426b-8a8e-588b157bcbc2"/>
+				<text><![CDATA[Biblioteca Universidad de Pamplona]]></text>
+			</staticText>
+			<image>
+				<reportElement x="10" y="0" width="65" height="79" uuid="b778b724-8758-46e1-a7a9-e4fda8e9d8c2"/>
+				<imageExpression><![CDATA[$P{logo}]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement x="279" y="15" width="172" height="35" forecolor="#FFFFFF" uuid="33faf04d-0e0c-4fe7-b1dd-b29f439db890"/>
+				<textElement textAlignment="Left" verticalAlignment="Bottom">
+					<font fontName="Arial Black" size="24"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{tipo}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="10" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="32" splitType="Stretch">
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="12" width="110" height="20" forecolor="#FFFFFF" backcolor="#333333" uuid="48d36945-f9bc-4afb-883d-01b9ad577a96"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ID USUARIOS]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="124" y="12" width="178" height="20" forecolor="#FFFFFF" backcolor="#333333" uuid="df6f852f-4f48-4fec-8e64-54b2131da42d"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[NOMBRE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="332" y="12" width="104" height="20" forecolor="#FFFFFF" backcolor="#333333" uuid="11e5f9d1-d208-4170-81f8-2607ab4e3163"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ROL]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="451" y="12" width="104" height="20" forecolor="#FFFFFF" backcolor="#333333" uuid="60edb9d0-c83f-41a9-b8e0-7b5482f39ec2"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[TELEFONO]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="22" splitType="Stretch">
+			<textField>
+				<reportElement x="454" y="2" width="98" height="20" uuid="ec8d12b5-062f-4cb9-af5e-9b0e9a5285fc"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial Black"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{telefono}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="332" y="2" width="104" height="20" uuid="1fc03183-e73a-4a0f-aefb-88ee50eb8371"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial Black"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{rol}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="2" width="110" height="20" uuid="fada5c94-7d8c-4deb-807c-2a7464b8495b"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial Black"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{id_usuario}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="124" y="2" width="178" height="20" uuid="e64f0e5c-9aa0-4677-88d5-4afb5fecdf91"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial Black"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nombre}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="54" splitType="Stretch">
+			<textField>
+				<reportElement mode="Opaque" x="0" y="41" width="515" height="13" forecolor="#FFFFFF" backcolor="#333333" uuid="4af890f2-0327-49d9-9d3d-807db5f563e9"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement x="10" y="41" width="100" height="13" forecolor="#FFFFFF" uuid="ed2194d3-48c1-4bd8-8070-9e263aaa75b8"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement mode="Opaque" x="515" y="41" width="40" height="13" forecolor="#FFFFFF" backcolor="#333333" uuid="2401fb0a-ffe5-4a0b-86d2-86a19fcec75f"/>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="12" splitType="Stretch"/>
+	</summary>
+</jasperReport>
