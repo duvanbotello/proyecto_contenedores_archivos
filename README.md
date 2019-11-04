@@ -39,3 +39,24 @@ El software debe contener:
 11. Listado de usuarios según su tipo
 
 Generar archivos planos por las opciones 4, 5, 6, 7, 8, 9, 10, 11.
+
+# Otros datos
+
+- La contraseña para acceder al sistema es ->  User: 1090499082 password: 123
+- Las librerias necesarias para ejecutar el proyecto se encuentras en https://github.com/duvanbotello/proyecto_contenedores_archivos/tree/master/dist/lib
+
+# Imagenes
+
+<img src="https://github.com/duvanbotello/proyecto_contenedores_archivos/blob/master/imagenes/1.PNG">
+
+<img src="https://github.com/duvanbotello/proyecto_contenedores_archivos/blob/master/imagenes/2.PNG" width="800">
+
+<img src="https://github.com/duvanbotello/proyecto_contenedores_archivos/blob/master/imagenes/3.PNG" width="800">
+
+<img src="https://github.com/duvanbotello/proyecto_contenedores_archivos/blob/master/imagenes/4.PNG" width="800">
+
+<img src="https://github.com/duvanbotello/proyecto_contenedores_archivos/blob/master/imagenes/5.PNG" width="800">
+
+<img src="https://github.com/duvanbotello/proyecto_contenedores_archivos/blob/master/imagenes/6.PNG" width="800">
+
+<img src="https://github.com/duvanbotello/proyecto_contenedores_archivos/blob/master/imagenes/7.PNG" width="800">
